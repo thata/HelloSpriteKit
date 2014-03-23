@@ -16,7 +16,7 @@
         // Hello Sprite Kit
         SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Arial"];
         
-        myLabel.text = @"Hello Sprite Kit";
+        myLabel.text = @"Hello Sprite Kit \U0001F363";
 //        myLabel.fontSize = 10;
         myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
                                        CGRectGetMidY(self.frame));
