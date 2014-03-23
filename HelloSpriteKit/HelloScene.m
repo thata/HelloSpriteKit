@@ -22,7 +22,8 @@
                                        CGRectGetMidY(self.frame));
         [self addChild:myLabel];
         
-//        self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
+        // シーンの枠から落ちないようにする        
+        self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
     }
     return self;
 }
