@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HelloScene.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    SKView * skView = (SKView *)self.view;
+    
+    // シーンを生成
+    SKScene * scene = [HelloScene sceneWithSize:skView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+    
+    // SKView へシーンを表示
+    [skView presentScene:scene];
 }
 
 - (void)didReceiveMemoryWarning
